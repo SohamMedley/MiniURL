@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener by Soham</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <main>
+    <h1 class="gradient-text">URL Shortener</h1>
+    <div class="search-container">
+      <input type="url" id="original-url" placeholder="Enter Long URL" required>
+      <input type="text" id="custom-text" placeholder="Custom Text (Optional)">
+      <button id="shorten-btn">Shorten</button>
+    </div>
+    <div class="results-container" id="result-container" style="display:none;">
+      <div class="thumbnail-card">
+        <h2>Your Shortened URL</h2>
+        <div class="shortened-url-container">
+          <input type="text" id="shortened-url" readonly>
+          <button id="copy-btn" title="Copy to Clipboard"><i class="fas fa-copy"></i></button>
+        </div>
+        <p>Original URL: <span id="original-url-display"></span></p>
+        <p>Created: <span id="created-date"></span></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="footer-text">Created by Soham | &copy; 2023</p>
+  </footer>
+  <script src="static/script.js"></script>
+</body>
+</html>
